@@ -1,7 +1,8 @@
-d3bac09ac46d0cd958175f572776288b *DESCRIPTION
+6eb3144f5d456b25f23b137f9efb89d1 *DESCRIPTION
+2adeb2c247b67ca327c98b6a0c464646 *LICENSE
 ec2100ef53cc6455b7003d69d49a1324 *NAMESPACE
-c3e1d09b9dbb18d27c75837647344a3c *R/array.R
-68be9138d6300f957be74d212e40ea3b *R/array_utils.R
+10c96d3e510865a81d6255e2755fbae7 *R/array.R
+440644c5d1fd80871e3c6dcdfbca9ffc *R/array_utils.R
 309f37339b9c2a0308d71b6969e9c377 *R/fetch.R
 2d04e0dfcbbdccdaa5ee5cb33add6ef5 *R/install_sys_deps.R
 c3cb9c6678f71d3f33341880a1de945c *R/qc.R
@@ -9,13 +10,13 @@ c3cb9c6678f71d3f33341880a1de945c *R/qc.R
 5130ecb81a996bb57f1d6d54da4e81ae *R/seeker.R
 85898fe0d890b81bac141b5fccb76b41 *R/tximport.R
 304ad4542a84c864655b58575096abab *R/utils.R
-259b6e912cab45c58a987239d6c07d61 *build/vignette.rds
+47ff737737b9b681ba87bbf298d0d664 *build/vignette.rds
 f1c2c71ad9f1e73701391ba6e1ac3e47 *inst/doc/introduction.R
 cae089cfe465d9a05133d135ab2ad20a *inst/doc/introduction.Rmd
-8b4f40bb7ee434ac67e71aecd907c962 *inst/doc/introduction.html
+de110e87a70a5127cd7fe2493299aa8c *inst/doc/introduction.html
 b5b9dfa2ef72e57c1b8c1e4c635eafba *inst/doc/reproducibility.R
 a2d1059edbd5fde18fa8ebba5ba464cf *inst/doc/reproducibility.Rmd
-ae5f72dd42f479a07087e637439af660 *inst/doc/reproducibility.html
+5e374745c88db08d569454842e92b287 *inst/doc/reproducibility.html
 bf5658b338bd1945eff0ea9325e0e3d6 *inst/extdata/GSE25585.yml
 71114e5168fafac0c408fc333ab65f62 *inst/extdata/PRJNA454445.yml
 f5f29ef55cfa9340059fe6a6eaddbd6a *inst/extdata/PRJNA600892.yml
@@ -47,8 +48,8 @@ df6082c5bf87b1068cd2622ea713091c *man/salmon.Rd
 643b263c3ede82cafa66bb32b3a409f2 *man/trimgalore.Rd
 85543591f31169e52dc238eca6403eee *man/tximport.Rd
 73d5766134caede266fbaa4eaa552a06 *tests/testthat.R
-70d874fec51f19c4b8271e9f83e43d0e *tests/testthat/data/E-MEXP-2755_eset.qs
-1b970ff3bd5c6d18555fcc619a45942b *tests/testthat/data/E-MEXP-2755_files.qs
+fff9cdcad67860fd83f2d4c1e14cd8e0 *tests/testthat/data/E-MEXP-3696_eset.qs
+631adfb2bc663d372b1004156092d0cf *tests/testthat/data/E-MEXP-3696_files.qs
 1c297dd39ed4b24a9874e5fb87bfe51f *tests/testthat/data/E-MTAB-8714_eset.qs
 d54ce9d8f4c013cdcba2d765c3eae8f9 *tests/testthat/data/E-MTAB-8714_files.qs
 16cbce42bab066d3163f2292531793ab *tests/testthat/data/GPL6887.qs
@@ -126,8 +127,8 @@ eb974eb4d6aca81a2c2f9ace9536694b *tests/testthat/data/seeker_output_skip.qs
 537e035c33bb30cd91355cfa1933dca2 *tests/testthat/data/trimgalore_output.qs
 06c2ecd1983fd18d281ea8f02763401a *tests/testthat/data/tx2gene_output.qs
 217d2a540e34ea9a143e8e29718f0192 *tests/testthat/data/tximport_output.qs
-782d8b3431d7ee27e59f6f9501009229 *tests/testthat/setup.R
-c971fd1cf67e8df0f7af10eb87f2c981 *tests/testthat/test-array-utils.R
+67f4e5000936e1ebc8744f6a19f22ac9 *tests/testthat/setup.R
+60dceec9d1465b2dfbd19ced748d57c3 *tests/testthat/test-array-utils.R
 889f8311348ac84f5eda6af4916196d3 *tests/testthat/test-array.R
 e9474314f87360384fd589e5eb74b193 *tests/testthat/test-fetch.R
 a226d41dcff8391485de144c51bdac77 *tests/testthat/test-qc.R
@@ -136,4 +137,3 @@ a226d41dcff8391485de144c51bdac77 *tests/testthat/test-qc.R
 503d9d393d789e4e2c8cd430d2fc2ece *tests/testthat/test-tximport.R
 cae089cfe465d9a05133d135ab2ad20a *vignettes/introduction.Rmd
 a2d1059edbd5fde18fa8ebba5ba464cf *vignettes/reproducibility.Rmd
-2dffa56300b9b89a586e0900907841d0 *vignettes/run_seeker.R
