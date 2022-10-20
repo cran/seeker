@@ -202,6 +202,7 @@ checkSeekerArgs = function(params, parentDir, dryRun = FALSE) {
 #' Process RNA-seq data end to end
 #'
 #' This function selectively performs various steps to process RNA-seq data.
+#' See also the vignettes: \code{browseVignettes('seeker')}.
 #'
 #' @param params Named list of parameters with components:
 #' * `study`: String used to name the output directory within `parentDir`.
@@ -346,6 +347,13 @@ checkSeekerArgs = function(params, parentDir, dryRun = FALSE) {
 #'
 #' @return Path to the output directory `parentDir`/`params$study`, invisibly.
 #'
+#' @examples
+#' \dontrun{
+#' doParallel::registerDoParallel()
+#' params = yaml::read_yaml('my_params.yaml')
+#' seeker(params)
+#' }
+#'
 #' @seealso [fetchMetadata()], [fetch()], [trimgalore()], [fastqc()],
 #'   [salmon()], [multiqc()], [tximport()], [installSysDeps()], [seekerArray()]
 #'
@@ -382,8 +390,8 @@ seeker = function(params, parentDir = '.', dryRun = FALSE) {
 
   if (paramsNow$run) {
     # host must be 'ena' to download fastq files using ascp
-    metadata = fetchMetadata(paramsNow$bioproject)
-    fwrite(metadata, metadataPath) # could be overwritten
+    metadata = fetchMetadata(paramsNow$bioproject, file = metadataPath)
+    # fwrite(metadata, metadataPath) # could be overwritten
   } else {
     metadata = fread(metadataPath, na.strings = '')}
   fwrite(metadata, file.path(outputDir, 'metadata_original.csv'))

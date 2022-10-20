@@ -9,7 +9,8 @@ fetchMetadata(
   host = c("ena", "sra"),
   fields = c("study_accession", "sample_accession", "secondary_sample_accession",
     "sample_alias", "sample_title", "experiment_accession", "run_accession", "fastq_md5",
-    "fastq_ftp", "fastq_aspera")
+    "fastq_ftp", "fastq_aspera"),
+  file = NULL
 )
 }
 \arguments{
@@ -19,6 +20,8 @@ fetchMetadata(
 
 \item{fields}{Character vector indicating which fields to fetch, if \code{host}
 is "ena".}
+
+\item{file}{String indicating output file path, if not \code{NULL}.}
 }
 \value{
 A \code{data.table}.
@@ -28,5 +31,5 @@ This function can use the API of the European Nucleotide Archive
 (recommended) or the Sequence Read Archive.
 }
 \seealso{
-\code{\link[=fetch]{fetch()}}
+\code{\link[=seeker]{seeker()}}, \code{\link[=fetch]{fetch()}}
 }

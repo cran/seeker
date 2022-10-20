@@ -7,10 +7,11 @@
 #' @param host String indicating from where to fetch the metadata.
 #' @param fields Character vector indicating which fields to fetch, if `host`
 #'   is "ena".
+#' @param file String indicating output file path, if not `NULL`.
 #'
 #' @return A `data.table`.
 #'
-#' @seealso [fetch()]
+#' @seealso [seeker()], [fetch()]
 #'
 #' @export
 fetchMetadata = function(
@@ -18,11 +19,13 @@ fetchMetadata = function(
   fields = c(
     'study_accession', 'sample_accession', 'secondary_sample_accession',
     'sample_alias', 'sample_title', 'experiment_accession', 'run_accession',
-    'fastq_md5', 'fastq_ftp', 'fastq_aspera')) {
+    'fastq_md5', 'fastq_ftp', 'fastq_aspera'), file = NULL) {
 
   assertString(bioproject)
   host = match.arg(host)
   assertCharacter(fields, any.missing = FALSE)
+  assertString(file, null.ok = TRUE)
+  if (!is.null(file)) assertPathForOutput(file, overwrite = TRUE)
 
   if (host == 'ena') {
     url = paste0(
@@ -38,6 +41,7 @@ fetchMetadata = function(
 
   raw = curl::curl_fetch_memory(url)
   metadata = fread(text = rawToChar(raw$content), sep = sep, na.strings = '')
+  if (!is.null(file)) fwrite(metadata, file)
   return(metadata)}
 
 
@@ -152,7 +156,7 @@ fetchMetadata = function(
 #' @return A list. As the function runs, it updates a tab-delimited log file in
 #'   `outputDir` called "progress.tsv".
 #'
-#' @seealso [fetchMetadata()]
+#' @seealso [seeker()], [fetchMetadata()]
 #'
 #' @export
 fetch = function(
