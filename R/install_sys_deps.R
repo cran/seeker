@@ -69,7 +69,7 @@ installMiniconda = function(installDir, minicondaEnv, rprofileDir) {
   minicondaEnvPath = if (minicondaEnv == 'base') {
     minicondaPath
   } else {
-    file.path(minicondaPath, 'envs', minicondaEnv)}
+    path.expand(file.path(minicondaPath, 'envs', minicondaEnv))}
 
   if (dir.exists(minicondaPath)) {
     message('Miniconda already installed, skipping...')
@@ -82,10 +82,10 @@ installMiniconda = function(installDir, minicondaEnv, rprofileDir) {
     withr::local_file(miniSh)
     download.file(
       glue('https://repo.anaconda.com/miniconda/{miniSh}'), miniSh, quiet = TRUE)
-    system2('sh', c(miniSh, '-b', '-p', file.path(installDir, 'miniconda3')))
+    system2('sh', c(miniSh, '-b', '-p', safe(minicondaPath)))
 
     message('Running conda init...')
-    system(glue('{minicondaPath}/bin/conda init bash'))}
+    system(glue('"{minicondaPath}/bin/conda" init bash'))}
 
   # Create new environment if it doesn't exist
   if (minicondaEnv != 'base' && !dir.exists(minicondaEnvPath)) {
@@ -98,7 +98,7 @@ installMiniconda = function(installDir, minicondaEnv, rprofileDir) {
       envYaml$name = minicondaEnv
       yaml::write_yaml(envYaml, yamlPath)}
 
-    system(glue('{minicondaPath}/bin/conda env create -f "{yamlPath}"'))}
+    system(glue('"{minicondaPath}/bin/conda" env create -f "{yamlPath}"'))}
 
   # Set the option
   # if (setSeekerOption) {
@@ -108,7 +108,8 @@ installMiniconda = function(installDir, minicondaEnv, rprofileDir) {
 
   message('Installing conda packages via mamba...')
   mambaEnvPath = system.file('extdata', 'mamba_env.yml', package = 'seeker')
-  mambaArgs = c('env', 'update', '-p', minicondaEnvPath, '--file', mambaEnvPath)
+  mambaArgs = c(
+    'env', 'update', '-p', safe(minicondaEnvPath), '--file', safe(mambaEnvPath))
   system3('mamba', mambaArgs)
 
   invisible()}
