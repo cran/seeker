@@ -1,9 +1,9 @@
-f9260238d5a6a24a57013ef4d0d5f4e5 *DESCRIPTION
+36644b00a2a637f438ef4d538329be83 *DESCRIPTION
 2adeb2c247b67ca327c98b6a0c464646 *LICENSE
 ec2100ef53cc6455b7003d69d49a1324 *NAMESPACE
 d6c8b28e92386a5dc85d0d98fc0e2c74 *R/array.R
 64b6eee48f778acd7c83709f7ba5addf *R/array_utils.R
-a5a9be73b05b893992e33b6cf32a928d *R/fetch.R
+216c676a193b8c3c62f8000a1ab26b26 *R/fetch.R
 deefbebf34b3cbd0fd9e8c684e97c653 *R/install_sys_deps.R
 e52d1a15c5856a5e7150555e6c3b77b9 *R/qc.R
 70556175864385ab1fe22bd74e70758d *R/salmon.R
@@ -13,10 +13,10 @@ e52d1a15c5856a5e7150555e6c3b77b9 *R/qc.R
 c28b05a8582518214ce5811c524ea97f *build/vignette.rds
 f1c2c71ad9f1e73701391ba6e1ac3e47 *inst/doc/introduction.R
 cae089cfe465d9a05133d135ab2ad20a *inst/doc/introduction.Rmd
-4e124cec8a54d80a45d6b4443339ff67 *inst/doc/introduction.html
+c499864c3b402ee8882b60fdf06f989d *inst/doc/introduction.html
 b5b9dfa2ef72e57c1b8c1e4c635eafba *inst/doc/reproducibility.R
 a2d1059edbd5fde18fa8ebba5ba464cf *inst/doc/reproducibility.Rmd
-1bc73f37f781e7f5aecdbf6cb82ed048 *inst/doc/reproducibility.html
+70bfd471894c0578c76f2d192978212b *inst/doc/reproducibility.html
 bf5658b338bd1945eff0ea9325e0e3d6 *inst/extdata/GSE25585.yml
 71114e5168fafac0c408fc333ab65f62 *inst/extdata/PRJNA454445.yml
 f5f29ef55cfa9340059fe6a6eaddbd6a *inst/extdata/PRJNA600892.yml
@@ -74,8 +74,8 @@ b0ae87955c7e59672098c9726ab6338e *tests/testthat/data/GSM5694054.yml
 2257d874cd9d535fed3929eca2c87034 *tests/testthat/data/LOCAL01/raw/GSM311246.CEL.gz
 54b3bcada95000a93ee18b050963f965 *tests/testthat/data/LOCAL01/sample_metadata.csv
 84e1821517c32e63f10a9482086320e5 *tests/testthat/data/fastqc_output.qs
-9c5c9e9d90079bdbe684c6c4dedcf00d *tests/testthat/data/fetch_metadata_output.qs
-8e5687f94569201cb5195833e5a225df *tests/testthat/data/fetch_metadata_output_2.qs
+2a1dce2cdd1ce45866ba15210adea81d *tests/testthat/data/fetch_metadata_output.qs
+6b34c9ead2c2973a95a305df8a134647 *tests/testthat/data/fetch_metadata_output_2.qs
 aa25b0ab369fc0e56f49edf97b9b70d1 *tests/testthat/data/fetch_output.qs
 36d84ae6210728530232ec9bdd4890dc *tests/testthat/data/get_tx2gene_output.qs
 d2ff5ccb02ec0625e0f82ac961b7a314 *tests/testthat/data/map_pkg_ver.qs
@@ -130,7 +130,7 @@ eb974eb4d6aca81a2c2f9ace9536694b *tests/testthat/data/seeker_output_skip.qs
 67f4e5000936e1ebc8744f6a19f22ac9 *tests/testthat/setup.R
 82228aed069bdc88fbc6a8e9522eec43 *tests/testthat/test-array-utils.R
 ca89b612a724f46c70030422b8f8d55c *tests/testthat/test-array.R
-e9474314f87360384fd589e5eb74b193 *tests/testthat/test-fetch.R
+2fd5d8bede1933271e4d70e619a23270 *tests/testthat/test-fetch.R
 a226d41dcff8391485de144c51bdac77 *tests/testthat/test-qc.R
 498bd951efdf9b4d72e97295e9a055c6 *tests/testthat/test-salmon.R
 0fc316866d29c35d36d2b0924a611663 *tests/testthat/test-seeker.R
