@@ -1,9 +1,9 @@
-d86af909b685022aa4556bf41408eb85 *DESCRIPTION
+66adecb5a6c88423180ace4d26ca00c7 *DESCRIPTION
 2adeb2c247b67ca327c98b6a0c464646 *LICENSE
 ec2100ef53cc6455b7003d69d49a1324 *NAMESPACE
 d6c8b28e92386a5dc85d0d98fc0e2c74 *R/array.R
 64b6eee48f778acd7c83709f7ba5addf *R/array_utils.R
-216c676a193b8c3c62f8000a1ab26b26 *R/fetch.R
+dfb9f94e6e55aa0d8b1b24eaa8b8f52a *R/fetch.R
 deefbebf34b3cbd0fd9e8c684e97c653 *R/install_sys_deps.R
 e52d1a15c5856a5e7150555e6c3b77b9 *R/qc.R
 70556175864385ab1fe22bd74e70758d *R/salmon.R
@@ -13,10 +13,10 @@ e52d1a15c5856a5e7150555e6c3b77b9 *R/qc.R
 29ea15c9c6099890e6633fc7c40e8b0b *build/vignette.rds
 f1c2c71ad9f1e73701391ba6e1ac3e47 *inst/doc/introduction.R
 cae089cfe465d9a05133d135ab2ad20a *inst/doc/introduction.Rmd
-73b9d2345de366270fc0697c5a46637d *inst/doc/introduction.html
+e2367cfbd2ef1139b29d83f3480f0edf *inst/doc/introduction.html
 b5b9dfa2ef72e57c1b8c1e4c635eafba *inst/doc/reproducibility.R
 a2d1059edbd5fde18fa8ebba5ba464cf *inst/doc/reproducibility.Rmd
-bf2082d6c244d31dcfe521342068c3c8 *inst/doc/reproducibility.html
+2346ab0bf3c0b43097a8357151d6b44c *inst/doc/reproducibility.html
 bf5658b338bd1945eff0ea9325e0e3d6 *inst/extdata/GSE25585.yml
 71114e5168fafac0c408fc333ab65f62 *inst/extdata/PRJNA454445.yml
 f5f29ef55cfa9340059fe6a6eaddbd6a *inst/extdata/PRJNA600892.yml
@@ -130,7 +130,7 @@ eb974eb4d6aca81a2c2f9ace9536694b *tests/testthat/data/seeker_output_skip.qs
 67f4e5000936e1ebc8744f6a19f22ac9 *tests/testthat/setup.R
 82228aed069bdc88fbc6a8e9522eec43 *tests/testthat/test-array-utils.R
 ca89b612a724f46c70030422b8f8d55c *tests/testthat/test-array.R
-8dba7db0b2e760d6abc05682afd1010b *tests/testthat/test-fetch.R
+58f889de22c99847fabefb6a9ff203d9 *tests/testthat/test-fetch.R
 a226d41dcff8391485de144c51bdac77 *tests/testthat/test-qc.R
 498bd951efdf9b4d72e97295e9a055c6 *tests/testthat/test-salmon.R
 0fc316866d29c35d36d2b0924a611663 *tests/testthat/test-seeker.R
