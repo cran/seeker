@@ -2,7 +2,7 @@ Package: seeker
 Type: Package
 Title: Simplified Fetching and Processing of Microarray and RNA-Seq
         Data
-Version: 1.1.3
+Version: 1.1.4
 Authors@R: c(
   person('Jake', 'Hughey', , 'jakejhughey@gmail.com', role = c('aut', 'cre')),
   person('Josh', 'Schoenbachler', , 'josh.schoenbachler@gmail.com', role = 'aut'))
@@ -35,14 +35,14 @@ Imports: affy (>= 1.68.0), AnnotationDbi (>= 1.52.0), BiocManager (>=
         0.21.2), R.utils (>= 2.11.0), RCurl (>= 1.98), readr (>=
         1.4.0), sessioninfo (>= 1.2.0), tximport (>= 1.8.0), withr (>=
         2.4.2), yaml (>= 2.2.1)
-Suggests: ArrayExpress (>= 1.50.0), Biobase, doParallel (>= 1.0.17),
+Suggests: ArrayExpress (>= 1.62.0), Biobase, doParallel (>= 1.0.17),
         knitr, org.Mm.eg.db, rmarkdown, testthat (>= 3.1.0)
 Config/testthat/edition: 3
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2023-05-23 23:24:19 UTC; jakehughey
+Packaged: 2023-12-04 06:55:54 UTC; jakehughey
 Author: Jake Hughey [aut, cre],
   Josh Schoenbachler [aut]
 Maintainer: Jake Hughey <jakejhughey@gmail.com>
 Repository: CRAN
-Date/Publication: 2023-05-23 23:40:02 UTC
+Date/Publication: 2023-12-04 07:10:02 UTC

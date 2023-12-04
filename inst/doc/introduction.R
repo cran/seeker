@@ -1,7 +1,7 @@
 ## ----setup, include = FALSE---------------------------------------------------
 knitr::opts_chunk$set(collapse = TRUE, comment = '#>')
 
-## ---- code = readLines(system.file('extdata', 'PRJNA600892.yml', package = 'seeker')), eval = FALSE----
+## ----code = readLines(system.file('extdata', 'PRJNA600892.yml', package = 'seeker')), eval = FALSE----
 #  study: 'PRJNA600892' # [string]
 #  metadata:
 #    run: TRUE # [logical]
@@ -56,11 +56,11 @@ knitr::opts_chunk$set(collapse = TRUE, comment = '#>')
 #    countsFromAbundance: 'lengthScaledTPM' # [string]
 #    # ignoreTxVersion # [logical or NULL]
 
-## ---- eval = FALSE------------------------------------------------------------
+## ----eval = FALSE-------------------------------------------------------------
 #  for (filename in c('PRJNA600892.yml', 'params_template.yml')) {
 #    file.copy(system.file('extdata', filename, package = 'seeker'), '.')}
 
-## ---- eval = FALSE------------------------------------------------------------
+## ----eval = FALSE-------------------------------------------------------------
 #  library('seeker')
 #  doParallel::registerDoParallel()
 #  
@@ -68,7 +68,7 @@ knitr::opts_chunk$set(collapse = TRUE, comment = '#>')
 #  params = yaml::read_yaml(yamlPath)
 #  seeker(params)
 
-## ---- eval = FALSE------------------------------------------------------------
+## ----eval = FALSE-------------------------------------------------------------
 #  library('seeker')
 #  
 #  study = 'GSE25585'

@@ -1,12 +1,12 @@
 ## ----setup, include = FALSE---------------------------------------------------
 knitr::opts_chunk$set(collapse = TRUE, comment = '#>')
 
-## ---- eval = FALSE------------------------------------------------------------
+## ----eval = FALSE-------------------------------------------------------------
 #  urlBase = 'https://raw.githubusercontent.com/hugheylab/seeker/master/inst/extdata/'
 #  for (filename in c('PRJNA600892.yml', 'run_seeker.R', 'run_seeker.sh')) {
 #    download.file(paste0(urlBase, filename), filename)}
 
-## ---- code = readLines(system.file('extdata', 'PRJNA600892.yml', package = 'seeker')), eval = FALSE----
+## ----code = readLines(system.file('extdata', 'PRJNA600892.yml', package = 'seeker')), eval = FALSE----
 #  study: 'PRJNA600892' # [string]
 #  metadata:
 #    run: TRUE # [logical]
@@ -61,7 +61,7 @@ knitr::opts_chunk$set(collapse = TRUE, comment = '#>')
 #    countsFromAbundance: 'lengthScaledTPM' # [string]
 #    # ignoreTxVersion # [logical or NULL]
 
-## ---- code = readLines(system.file('extdata', 'run_seeker.R', package = 'seeker')), eval = FALSE----
+## ----code = readLines(system.file('extdata', 'run_seeker.R', package = 'seeker')), eval = FALSE----
 #  doParallel::registerDoParallel()
 #  
 #  cArgs = commandArgs(TRUE)
@@ -71,7 +71,7 @@ knitr::opts_chunk$set(collapse = TRUE, comment = '#>')
 #  params = yaml::read_yaml(yamlPath)
 #  seeker::seeker(params, parentDir)
 
-## ---- code = readLines(system.file('extdata', 'run_seeker.sh', package = 'seeker')), eval = FALSE----
+## ----code = readLines(system.file('extdata', 'run_seeker.sh', package = 'seeker')), eval = FALSE----
 #  #!/bin/sh
 #  
 #  docker run \
@@ -86,16 +86,16 @@ knitr::opts_chunk$set(collapse = TRUE, comment = '#>')
 #        && Rscript run_seeker.R PRJNA600892.yml ." \
 #    &> PRJNA600892_progress.log
 
-## ---- eval = FALSE------------------------------------------------------------
+## ----eval = FALSE-------------------------------------------------------------
 #  urlBase = 'https://raw.githubusercontent.com/hugheylab/seeker/master/inst/extdata/'
 #  for (filename in c('GSE25585.yml', 'run_seeker_array.R', 'run_seeker_array.sh')) {
 #    download.file(paste0(urlBase, filename), filename)}
 
-## ---- code = readLines(system.file('extdata', 'GSE25585.yml', package = 'seeker')), eval = FALSE----
+## ----code = readLines(system.file('extdata', 'GSE25585.yml', package = 'seeker')), eval = FALSE----
 #  study: 'GSE25585'
 #  geneIdType: 'entrez'
 
-## ---- code = readLines(system.file('extdata', 'run_seeker_array.R', package = 'seeker')), eval = FALSE----
+## ----code = readLines(system.file('extdata', 'run_seeker_array.R', package = 'seeker')), eval = FALSE----
 #  cArgs = commandArgs(TRUE)
 #  
 #  params = yaml::read_yaml(cArgs[1L])
@@ -105,7 +105,7 @@ knitr::opts_chunk$set(collapse = TRUE, comment = '#>')
 #    study = params$study, geneIdType = params$geneIdType,
 #    platform = params$platform, parentDir)
 
-## ---- code = readLines(system.file('extdata', 'run_seeker_array.sh', package = 'seeker')), eval = FALSE----
+## ----code = readLines(system.file('extdata', 'run_seeker_array.sh', package = 'seeker')), eval = FALSE----
 #  #!/bin/sh
 #  
 #  docker run \
