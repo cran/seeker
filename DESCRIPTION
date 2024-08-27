@@ -2,7 +2,7 @@ Package: seeker
 Type: Package
 Title: Simplified Fetching and Processing of Microarray and RNA-Seq
         Data
-Version: 1.1.5
+Version: 1.1.6
 Authors@R: c(
   person('Jake', 'Hughey', , 'jakejhughey@gmail.com', role = c('aut', 'cre')),
   person('Josh', 'Schoenbachler', , 'josh.schoenbachler@gmail.com', role = 'aut'))
@@ -26,7 +26,7 @@ Description: Wrapper around various existing tools and command-line interfaces,
 URL: https://seeker.hugheylab.org, https://github.com/hugheylab/seeker
 License: MIT + file LICENSE
 Encoding: UTF-8
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 Depends: R (>= 3.5)
 Imports: affy (>= 1.68.0), AnnotationDbi (>= 1.52.0), BiocManager (>=
         1.30.0), biomaRt (>= 2.36.1), checkmate (>= 2.1.0), curl (>=
@@ -40,9 +40,9 @@ Suggests: ArrayExpress (>= 1.62.0), Biobase, doParallel (>= 1.0.17),
 Config/testthat/edition: 3
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2024-01-22 18:37:12 UTC; jakehughey
+Packaged: 2024-08-26 22:03:55 UTC; jakehughey
 Author: Jake Hughey [aut, cre],
   Josh Schoenbachler [aut]
 Maintainer: Jake Hughey <jakejhughey@gmail.com>
 Repository: CRAN
-Date/Publication: 2024-01-22 18:50:02 UTC
+Date/Publication: 2024-08-27 03:50:02 UTC
